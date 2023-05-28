@@ -5,8 +5,8 @@ Python 3.10
 
 TO RUN: 
 
-python -m venv venv
-venv/Scripts/activate
-pip install pipenv
-pipenv install
-pipenv install —dev
+1) python -m venv venv
+2) venv/Scripts/activate
+3) pip install pipenv
+4) pipenv install
+5) pipenv install —dev
