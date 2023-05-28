@@ -1,0 +1,42 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu116"
+verify_ssl = true
+name = "pytorch-cuda"
+
+[packages]
+numpy = "*"
+torch = {version = "==1.13.1+cu116", index = "pytorch-cuda"}
+torchvision = "0.14.1"
+
+pandas = "*"
+pyarrow = "*"
+transformers = "*"
+pydantic = "*"
+pylint = "*"
+fastapi = "*"
+uvicorn = "*"
+Pillow = "*"
+opencv-python = "*"
+yolov5 = "*"
+
+[dev-packages]
+dvc = "*"
+jupyter = "*"
+ipywidgets = ">=7.5"
+ipykernel = "*"
+plotly = "*"
+notebook = ">=5.3"
+matplotlib = "*"
+protobuf = "3.20.x"
+tensorboard = "*"
+scikit-learn = "*"
+pylint = "*"
+black = "*"
+
+[requires]
+python_version = "3.10"
